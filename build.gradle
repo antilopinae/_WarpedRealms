@@ -9,12 +9,19 @@ buildscript {
   }
   dependencies {
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    classpath "com.google.protobuf:protobuf-gradle-plugin:$protobufPluginVersion"
   }
+}
+
+plugins {
+  id("com.google.protobuf") version "0.9.4"
 }
 
 allprojects {
   apply plugin: 'eclipse'
   apply plugin: 'idea'
+  apply plugin: 'java'
+  apply plugin: 'com.google.protobuf'
 }
 
 configure(subprojects) {
