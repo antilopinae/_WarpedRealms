@@ -1,9 +1,19 @@
 syntax = "proto3";
 package com.grpc;
+option java_multiple_files=true;
+
+enum Sentiment{
+  HAPPY=0;
+  SLEEPY=1;
+  ANGRY=2;
+}
 
 message HelloRequest{
   string name=1;
-  repeated string hobbies=2;
+  int64 age=2;
+  Sentiment sentiment=3;
+  repeated string hobbies=4;
+  map<string, string> bagOfTricks=6;
 }
 
 message HelloResponse{
@@ -11,5 +21,5 @@ message HelloResponse{
 }
 
 service GreetingService{
-  rpc greeting(HelloRequest) returns (stream HelloResponse);
+  rpc greeting(stream HelloRequest) returns (stream HelloResponse);
 }

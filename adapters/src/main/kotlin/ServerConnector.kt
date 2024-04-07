@@ -15,7 +15,7 @@ class ServerConnector() {
         send()
     }
     fun send(){
-        client.sendMessage()
+        client.sendMessage2()
     }
     fun push(p: ByteArray): Boolean {
         return true
