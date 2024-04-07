@@ -21,8 +21,11 @@ class GRpcClient {
             .newBuilder()
             .setName("Client1")
             .build()
-        val response: GreetingServiceOuterClass.HelloResponse = stub.greeting(request)
-        println("$response")
+        //val response: GreetingServiceOuterClass.HelloResponse = stub.greeting(request) - not stream!
+        val response: Iterator<GreetingServiceOuterClass.HelloResponse> = stub.greeting(request)
+        while(response.hasNext()){
+            println("${response.next()}")
+        }
         channel.shutdownNow()
     }
 }
