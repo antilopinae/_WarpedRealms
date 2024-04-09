@@ -1,4 +1,4 @@
-package warped.realms.entity.mapper.component
+package warped.realms.component.mapper
 
 import warped.realms.component.MoveComponent
 

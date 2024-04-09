@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="99cf4c05-3e10-463d-8249-7f6c26c63cbd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/dao/RequestMessage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/dao/ResponseMessage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapters/src/main/kotlin/grpc/GRpcLayer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapters/src/main/kotlin/rest_api/KtorLayer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/component/mapper/PhysicMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/mapper/ResponseDismapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/trash/Trash.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/adapters/grpc/WarpedRealms.adapters.grpc.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/grpc/src/main/proto/GreetingService.proto" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/src/main/proto/GreetingService.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/ServerConnector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/src/main/kotlin/ServerConnector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/getter/GetterRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/getter/IGetRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/queue/ServerQueue.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/ServerQueue.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/request/ServerRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/serialize/IMessage.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/serialize/MessageType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/serialize/message/Message1.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/serialize/message/Message2.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/setter/ISetRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/setter/SetterRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/entity/mapper/EntityMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/entity/mapper/EntityMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/entity/mapper/component/MoveMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/component/mapper/MoveMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/entity/mapper/component/TransformMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/component/mapper/TransformMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/PhysicSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/PhysicSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/mapper/ServerDismapperSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/mapper/ServerDismapperSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/mapper/ServerMapperSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/mapper/ServerMapperSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/src/main/kotlin/SampleAnnotationProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/kotlin/SampleAnnotationProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/adapters">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/adapters/grpc">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WarpedRealms" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WarpedRealms" type="f1a62948:ProjectNode" />
+                <item name="adapters" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WarpedRealms" type="f1a62948:ProjectNode" />
+                <item name="adapters" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WarpedRealms" type="f1a62948:ProjectNode" />
+                <item name="adapters" type="2d1252cf:ModuleNode" />
+                <item name="grpc" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WarpedRealms" type="f1a62948:ProjectNode" />
+                <item name="adapters" type="2d1252cf:ModuleNode" />
+                <item name="grpc" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WarpedRealms" type="f1a62948:ProjectNode" />
+                <item name="adapters" type="2d1252cf:ModuleNode" />
+                <item name="grpc" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2eosYBfioeBDfZHMuhpboV00Uia" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Build WarpedRealms.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WarpedRealms:adapters:grpc [generateProto].executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin script (Beta).build.gradle.kts.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Lwjgl3Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="mapper.entity" />
+      <recent name="grpc" />
+      <recent name="warped.realms.component.mapper" />
+      <recent name="serialize.old_message" />
+      <recent name="getter" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.Lwjgl3Launcher">
+    <configuration name="WarpedRealms:adapters:grpc [generateProto]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/adapters/grpc" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generateProto" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Lwjgl3Launcher" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="warped.realms.lwjgl3.Lwjgl3Launcher" />
+      <module name="WarpedRealms.lwjgl3.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="build.gradle.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="WarpedRealms" />
+      <option name="filePath" value="$PROJECT_DIR$/processor/build.gradle.kts" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.Lwjgl3Launcher" />
+        <item itemvalue="Kotlin script (Beta).build.gradle.kts" />
+        <item itemvalue="Gradle.WarpedRealms:adapters:grpc [generateProto]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99cf4c05-3e10-463d-8249-7f6c26c63cbd" name="Changes" comment="" />
+      <created>1712582310781</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712582310781</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

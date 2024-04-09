@@ -116,6 +116,7 @@ class SampleAnnotationProcessor(val environment: SymbolProcessorEnvironment) : S
                     processed_scan_root_factory.add(scan.asType(listOf()).toClassName())
                 }
         */
+        processed_update = processed_update.toList().sortedBy { k -> k.second }.toMap().toMutableMap()
         val output = Output(
             OutputSystems(
                 processed_systems,
@@ -415,7 +416,7 @@ class Output(
             writer.appendLine("    const val size = ${processed_update.size}")
             for (i in 0..<processed_update.size) {
                 val system = processed_update.toList()[i].first
-                writer.appendLine("    private val system${i + 1} = ${system.simpleName}()")
+                writer.appendLine("    private val system${i + 1} = ${system.simpleName}() //${processed_update.toList()[i].second}")
             }
             writer.appendLine("\n    val systems: HashMap<KClass<*>, *> = hashMapOf(")
             for (i in 0..<processed_update.size) {

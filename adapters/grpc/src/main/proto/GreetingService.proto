@@ -2,22 +2,38 @@ syntax = "proto3";
 package com.grpc;
 option java_multiple_files=true;
 
-enum Sentiment{
-  HAPPY=0;
-  SLEEPY=1;
-  ANGRY=2;
+enum Action{
+  ATTACK=0;
+}
+
+message InputMap{
+  bytes input_x=1;
+  bytes input_y=2;
+  bytes input_z=3;
+
+  bytes mouse_x=4;
+  bytes mouse_y=5;
+}
+
+message InputMessage{
+  InputMap input=1;
+  repeated Action actions=2;
 }
 
 message HelloRequest{
-  string name=1;
-  int64 age=2;
-  Sentiment sentiment=3;
-  repeated string hobbies=4;
-  map<string, string> bagOfTricks=6;
+  string token=1;
+  InputMessage message=2;
+  //  map<string, string> bagOfTricks=6;
+}
+
+message PlayerPosition{
+  uint64 position_x=1;
+  uint64 position_y=2;
 }
 
 message HelloResponse{
-  string greeting=1;
+  string token=1;
+  repeated PlayerPosition positions=2;
 }
 
 service GreetingService{

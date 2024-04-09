@@ -1,4 +1,4 @@
-package adapters.queue
+package adapters.grpc.client
 
 import java.util.concurrent.locks.ReentrantLock
 
@@ -6,13 +6,10 @@ class ServerQueue() {
     //val lock = ReentrantReadWriteLock()
     //val writeLock = lock.writeLock()
     val lock: ReentrantLock = ReentrantLock()
-
     val queue = mutableListOf<Int>()
     val capacity = 2
-
     val stackEmptyCondition = lock.newCondition()
     val stackFullCondition = lock.newCondition()
-
     fun push(num: Int) {
         lock.lock()
         try {
@@ -27,7 +24,6 @@ class ServerQueue() {
             lock.unlock()
         }
     }
-
     fun pop(): Int {
         lock.lock()
         var t = 0

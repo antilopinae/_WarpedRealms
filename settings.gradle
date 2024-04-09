@@ -6,7 +6,4 @@ include 'processor'
 include 'annotation'
 include 'adapters'
 include 'adapters:rest'
-findProject(':adapters:rest')?.name = 'rest'
 include 'adapters:grpc'
-findProject(':adapters:grpc')?.name = 'grpc'
-

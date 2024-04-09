@@ -1,32 +1,29 @@
 package adapters
 
+import adapters.grpc.GRpcLayer
 import adapters.grpc.client.GRpcClient
-import adapters.request.ServerRequest
+import adapters.grpc.client.dao.RequestMessage
+import adapters.grpc.client.dao.ResponseMessage
 import io.ktor.client.plugins.*
 
 //Подключение к серверу, передача событий.
 class ServerConnector() {
-    private val serverRequest = ServerRequest()
-    //private val server_builder = ServerBuilder().also { serverRequest.serverBuilder = it }
-    val client = GRpcClient()
+    val GRpcLayer = GRpcLayer()
     init {
         println("==========Server To Connect==========")
         //serverRequest.startConnection()
-        send()
     }
-    fun send(){
-        client.sendMessage2()
-    }
-    fun push(p: ByteArray): Boolean {
-        return true
+    val token: String = "ajajajajajjajajajajajajaj"
+    fun sendRequest(p: RequestMessage) {
+        p.token =token
+        GRpcLayer.sendRequest(p)
     }
 
-    fun pop(): ByteArray {
-        val b = byteArrayOf(0, 0, 0, 0, 0)
-        return b
+    fun getResponse(): ResponseMessage {
+        return GRpcLayer.getResponse()
     }
 
     fun dispose() {
-        serverRequest.dispose()
+        GRpcLayer.stopConnection()
     }
 }

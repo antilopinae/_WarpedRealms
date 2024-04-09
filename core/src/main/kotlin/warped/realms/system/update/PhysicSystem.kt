@@ -66,8 +66,17 @@ class PhysicSystem : ContactListener {
                 physicCmp.body!!.applyLinearImpulse(physicCmp.impulse, physicCmp.body!!.worldCenter, true)
                 physicCmp.impulse.setZero()
             }
+
+            val (bodyX, bodyY) = physicCmp.body!!.position
+
+            imageCmp.image.run {
+                setPosition(
+                    bodyX - width * 0.5f,
+                    bodyY - height * 0.5f
+                )
+            }
         }
-        onAlpha(deltaTime)
+//        onAlpha(deltaTime)
     }
     fun onAlpha(alpha: Float) {
         physCmps.forEach { physicCmp, imageCmp ->

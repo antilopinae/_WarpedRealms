@@ -28,6 +28,7 @@ dependencies {
   implementation project(":annotation")
   implementation project(":processor")
   implementation project(":adapters")
+  implementation project(":adapters:grpc")
 
   ksp project(":processor")
   kspTest(project(':processor'))

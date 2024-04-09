@@ -6,7 +6,7 @@ import adapters.ServerConnector
 import warped.realms.entity.mapper.EntityMapper
 
 @System
-@Update(12)
+@Update(9)
 class ServerDismapperSystem {
     private val entityMappers = mutableListOf<EntityMapper>()
     lateinit var serverConnector: ServerConnector
@@ -14,8 +14,9 @@ class ServerDismapperSystem {
         entityMappers.add(cmp)
     }
     fun Update(delta: Float) {
-        val p = serverConnector.pop()
-        entityMappers.forEach { it.dismapEntity(p) }
+        val response = serverConnector.getResponse()
+
+        entityMappers.first().dismapEntity(ResponseDismapper(response.positions.first()))
     }
     fun Dispose() {
         entityMappers.clear()
