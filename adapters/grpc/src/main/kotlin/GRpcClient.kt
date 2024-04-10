@@ -58,8 +58,9 @@ class GRpcClient {
             .setToken("")
             .addPositions(
                 PlayerPosition.newBuilder()
-                    .setPositionX(1000)
-                    .setPositionY(100)
+                    .setPlayer("Other player")
+                    .setPositionX(1f)
+                    .setPositionY(1f)
                     .build()
             )
             .build()
@@ -85,7 +86,7 @@ class GRpcClient {
     fun unmapResponse(packServer: HelloResponse): ResponseMessage {
         val response = ResponseMessage(
             packServer.token,
-            packServer.positionsList.map { x -> Position(x.positionX, x.positionY) }
+            packServer.positionsList.map { x -> x.player to  Position(x.positionX, x.positionY) }.toMap()
         )
         return response
     }

@@ -2,10 +2,10 @@ package adapters.grpc.client.dao
 
 class ResponseMessage(
     val token: String,
-    val positions: List<Position>
+    val positions: Map<String,Position>
 )
 
 class Position(
-    val position_x: Long,
-    val position_y: Long
+    val position_x: Float,
+    val position_y: Float
 )

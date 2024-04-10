@@ -27,8 +27,9 @@ message HelloRequest{
 }
 
 message PlayerPosition{
-  uint64 position_x=1;
-  uint64 position_y=2;
+  string player=1;
+  float position_x=2;
+  float position_y=3;
 }
 
 message HelloResponse{

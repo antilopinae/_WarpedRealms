@@ -11,9 +11,6 @@ import ktx.tiled.x
 import ktx.tiled.y
 import warped.realms.component.*
 import warped.realms.entity.Entity
-import warped.realms.event.Event
-import warped.realms.event.IHandleEvent
-import warped.realms.event.MapChangeEvent
 import warped.realms.screen.Screen.Companion.UNIT_SCALE
 import System
 import com.badlogic.gdx.graphics.g2d.TextureRegion
@@ -25,6 +22,7 @@ import ktx.box2d.BodyDefinition
 import ktx.box2d.body
 import warped.realms.entity.GameEntity
 import warped.realms.entity.mapper.EntityMapper
+import warped.realms.event.*
 import warped.realms.input.PlayerKeyboardInputProcessor
 import warped.realms.system.update.CameraSystem
 import warped.realms.system.update.PhysicSystem
@@ -94,6 +92,14 @@ class SpawnSystem : IHandleEvent {
                         return true;
                     }
                 }
+            }
+            is EntitySpawnEvent -> {
+                spawnCfg(event.typeEntity, 1f, 1f)
+                event.lock.unlock()
+                println("Spawn entity")
+            }
+            is EntityDespawnEvent -> {
+                println("Despawn entity")
             }
         }
         return false
