@@ -11,7 +11,6 @@ class ServerConnector() {
     val GRpcLayer = GRpcLayer()
     init {
         println("==========Server To Connect==========")
-        //serverRequest.startConnection()
     }
     val token: String = "ajajajajajjajajajajajajaj"
     fun sendRequest(p: RequestMessage) {
@@ -19,7 +18,7 @@ class ServerConnector() {
         GRpcLayer.sendRequest(p)
     }
 
-    fun getResponse(): ResponseMessage {
+    fun getResponse(): ResponseMessage? {
         return GRpcLayer.getResponse()
     }
 

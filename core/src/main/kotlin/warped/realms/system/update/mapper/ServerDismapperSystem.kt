@@ -28,9 +28,7 @@ class ServerDismapperSystem {
         entityMappers.add(cmp)
     }
     fun Update(delta: Float) {
-        val response = serverConnector.getResponse()
-
-        println(response.positions.size)
+        val response = serverConnector.getResponse()?:return
 
         for(i in 0..response.positions.size-1){
             if(entityMappers.size>i){

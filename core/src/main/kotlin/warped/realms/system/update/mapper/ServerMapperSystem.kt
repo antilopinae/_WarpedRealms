@@ -8,7 +8,6 @@ import warped.realms.entity.mapper.EntityMapper
 
 import java.util.*
 
-
 @System
 @Update(12)
 class ServerMapperSystem {

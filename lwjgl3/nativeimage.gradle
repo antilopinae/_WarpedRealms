@@ -16,7 +16,7 @@ project(":lwjgl3") {
         jvmArgs.addAll("-Dfile.encoding=UTF8")
         sharedLibrary = false
       }
-    }
+    }t
   }
   run {
     doNotTrackState("Running the app should not be affected by Graal.")

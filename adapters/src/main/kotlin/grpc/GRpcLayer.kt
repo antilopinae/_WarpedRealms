@@ -18,11 +18,13 @@ class GRpcLayer {
         request_messages.add(sendPack)
         client.sendMessage()
     }
-    fun getResponse(): ResponseMessage {
-        val getPack = client.getMessage()
+    fun getResponse(): ResponseMessage? {
+        val getPack = client.getMessage() ?: return null
+        println("SERVER NOT NULL")
         return client.unmapResponse(getPack)
     }
     fun stopConnection(){
+        println("Stop connection")
         TODO()
     }
 }

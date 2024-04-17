@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99cf4c05-3e10-463d-8249-7f6c26c63cbd" name="Changes" comment="I can do it ^_^">
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/event/EntityDespawnEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/event/EntitySpawnEvent.kt" afterDir="false" />
+    <list default="true" id="99cf4c05-3e10-463d-8249-7f6c26c63cbd" name="Changes" comment="Add new player from server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/dao/ResponseMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/dao/ResponseMessage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/grpc/src/main/proto/GreetingService.proto" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/src/main/proto/GreetingService.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/SpawnSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/SpawnSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/ServerConnector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/src/main/kotlin/ServerConnector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/grpc/GRpcLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/src/main/kotlin/grpc/GRpcLayer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/mapper/ServerDismapperSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/mapper/ServerDismapperSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/mapper/ServerMapperSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/mapper/ServerMapperSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lwjgl3/nativeimage.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/nativeimage.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/kotlin/warped/realms/lwjgl3/Lwjgl3Launcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/src/main/kotlin/warped/realms/lwjgl3/Lwjgl3Launcher.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,12 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712696633120</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add new player from server">
+      <option name="closed" value="true" />
+      <created>1712737821132</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712737821132</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="I can do it ^_^" />
-    <option name="LAST_COMMIT_MESSAGE" value="I can do it ^_^" />
+    <MESSAGE value="Add new player from server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new player from server" />
   </component>
 </project>

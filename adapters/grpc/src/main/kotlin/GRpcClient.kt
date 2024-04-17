@@ -34,15 +34,6 @@ class GRpcClient {
 
     val lock: ReentrantLock = ReentrantLock()
 
-    val send = Thread{
-        for(i in 0..1000){
-            lock.lock()
-            lock.unlock()
-
-            val request = request_messages.poll()
-            toServer.onNext(request)
-        }
-    }
 
     init{
         println("GRpc client started")
@@ -51,19 +42,10 @@ class GRpcClient {
         val request = request_messages.poll()
         toServer.onNext(request)
     }
-    fun getMessage(): HelloResponse {
+    fun getMessage(): HelloResponse? {
         if(response_messages.size!=0)
-            return response_messages.peek()
-        else return HelloResponse.newBuilder()
-            .setToken("")
-            .addPositions(
-                PlayerPosition.newBuilder()
-                    .setPlayer("Other player")
-                    .setPositionX(1f)
-                    .setPositionY(1f)
-                    .build()
-            )
-            .build()
+            return response_messages.poll()
+        else return null
     }
     fun mapRequest(packClient: RequestMessage): HelloRequest{
         return request

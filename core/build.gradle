@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
   id "com.google.devtools.ksp" version "1.9.22-1.0.16"
 }
@@ -32,4 +34,11 @@ dependencies {
 
   ksp project(":processor")
   kspTest(project(':processor'))
+}
+
+tasks.withType(KotlinCompile).configureEach {
+  if (it.name.contains("ksp")) {
+//    inputs.property("kotlinSources", sourceSets.main.kotlin.srcDirs)
+    outputs.upToDateWhen { false }
+  }
 }
