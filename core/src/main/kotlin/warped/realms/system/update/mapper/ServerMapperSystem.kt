@@ -30,16 +30,16 @@ class ServerMapperSystem {
         entityMappers.clear()
     }
 
-    fun Float.toByteArray() = if (this>0) byteArray2 else if(this<0) byteArray0 else byteArray1
+    fun Float._toInt() = if (this>0) 1 else if(this<0) -1 else 0
 
     fun MutableList<EntityMapper>.push(): RequestMessage {
         val player = this.first()
         return RequestMessage(
-            player.moveMapper.mapperCmp.cos.toByteArray(),
-            player.moveMapper.mapperCmp.sin.toByteArray(),
-            byteArray1,
-            byteArray0,
-            byteArray0
+            player.moveMapper.mapperCmp.cos._toInt(),
+            player.moveMapper.mapperCmp.sin._toInt(),
+            0,
+            0,
+            0
         )
     }
 }
