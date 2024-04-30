@@ -21,6 +21,9 @@ class ServerDismapperSystem {
     val spawnEntityEvent: EntitySpawnEvent by lazy {
         EntitySpawnEvent(entityType.PLAYER, injectSys<SpawnSystem>())
     }
+    val spawnNPCEntityEvent: EntitySpawnEvent by lazy {
+        EntitySpawnEvent(entityType.NPC, injectSys<SpawnSystem>())
+    }
     val despawnEntityEvent: EntityDespawnEvent by lazy {
         EntityDespawnEvent(entityType.PLAYER, injectSys<SpawnSystem>())
     }
@@ -35,6 +38,13 @@ class ServerDismapperSystem {
                 entityMappers[i].dismapEntity(ResponseDismapper(response.positions.toList()[i].second))
             }
             else{
+                val spawnEntityEvent = if(i == 0)
+                {
+                    spawnEntityEvent
+                }
+                else{
+                    spawnNPCEntityEvent
+                }
                 if(!spawnEntityEvent.lock.isLocked){
                     spawnEntityEvent.lock.lock()
                     spawnEntityEvent.onTick()

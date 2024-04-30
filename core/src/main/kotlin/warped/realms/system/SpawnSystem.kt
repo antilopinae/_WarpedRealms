@@ -41,6 +41,19 @@ class SpawnSystem : IHandleEvent {
     private val cachedSizes = mutableMapOf<AnimationModel, Vector2>()
 
     private fun spawnCfg(type: entityType, posX: Float, posY: Float): Entity = when (type) {
+        entityType.NPC -> createEntity(
+            AnimationModel.FANTAZY_WARRIOR,
+            posX,
+            posY,
+            size(AnimationModel.FANTAZY_WARRIOR),
+            8f,
+            physicScaling = vec2(0.3f, 0.3f),
+            physicOffset = vec2(0f, -10f * UNIT_SCALE)
+        ).also {
+            injectSys<ServerDismapperSystem>().PutComponent(EntityMapper(it))
+
+            Logger.debug { "Player has spawned with size: ${size(AnimationModel.FANTAZY_WARRIOR)}!" }
+        }
         entityType.PLAYER -> createEntity(
             AnimationModel.FANTAZY_WARRIOR,
             posX,
@@ -221,7 +234,7 @@ class SpawnSystem : IHandleEvent {
     }
 }
 enum class entityType {
-    PLAYER, RAT;
+    PLAYER, RAT, NPC;
 
     val atlasKey: String = this.toString().lowercase()
 }
