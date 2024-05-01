@@ -23,12 +23,25 @@ class WarpedRealms : KtxGame<KtxScreen>() {
         Gdx.app.logLevel = Application.LOG_DEBUG
 
         ScreenManager.getInstance().init(this)
+
+        startGameScreen()
+    }
+    fun startAuthorizationScreen(){
+        try{
+            ScreenManager.getInstance().hide(EnumScreen.GAME)
+        } catch (e: Exception)
+        {
+            println(e.stackTraceToString())
+        }
         ScreenManager.getInstance().show(EnumScreen.AUTHORIZATION_SCREEN)
-//        ScreenManager.getInstance().show(EnumScreen.GAME)
-//        ScreenManager.getInstance().hide(EnumScreen.GAME)
     }
     fun startGameScreen(){
-        ScreenManager.getInstance().hide(EnumScreen.AUTHORIZATION_SCREEN)
+        try{
+            ScreenManager.getInstance().hide(EnumScreen.AUTHORIZATION_SCREEN)
+        } catch (e: Exception)
+        {
+            println(e.stackTraceToString())
+        }
         ScreenManager.getInstance().show(EnumScreen.GAME)
     }
     override fun dispose() {

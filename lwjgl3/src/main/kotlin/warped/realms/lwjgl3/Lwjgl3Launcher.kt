@@ -19,7 +19,7 @@ fun main() {
         //setResizable(false)
         useVsync(true)
         setIdleFPS(60)
-        setForegroundFPS(60)
+        setForegroundFPS(120)
         setWindowIcon(*(arrayOf(128, 64, 32, 16).map { "libgdx$it.png" }.toTypedArray()))
     })
 }

@@ -7,6 +7,7 @@ import warped.realms.component.MoveComponent
 import warped.realms.component.PhysicComponent
 import System
 import Update
+import warped.realms.component.ImageComponent
 
 @System
 @Update(2)

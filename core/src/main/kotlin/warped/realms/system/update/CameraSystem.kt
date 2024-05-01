@@ -10,6 +10,7 @@ import warped.realms.event.IHandleEvent
 import warped.realms.event.MapChangeEvent
 import System
 import Update
+import kotlin.math.absoluteValue
 
 @System
 @Update(1)
@@ -23,17 +24,41 @@ class CameraSystem : IHandleEvent {
     fun addTrecker(component: ImageComponent) {
         imageCmps.add(component)
     }
+    private var prevX = 0f
+    private var prevY = 0f
+
+    private var newX = 0f
+    private var newY = 0f
+
+    private var setX = 0f
+    private var setY = 0f
     fun Update(deltaTime: Float) {
 //        val x = this.javaClass.getAnnotation(Update::class.java)?.priority
 //        println("[UPDATE] ${this::class.simpleName} $x")
 
         val viewW = camera.viewportWidth * 0.5f
         val viewH = camera.viewportHeight * 0.5f
+
+        prevX = camera.position.x
+        prevY = camera.position.y
+
         if (imageCmps.isNotEmpty()) {
             with(imageCmps.last()) {
+                newX = image.x + image.width * 0.5f
+                newY = image.y + image.height * 0.5f
+                if((prevX-newX).absoluteValue > 0.001f)
+                {
+                    setX = newX + (prevX-newX)*0.6f
+                    setY = newY + (prevY-newY)*0.6f
+                }
+                else
+                {
+                    setX = newX
+                    setY = newY
+                }
                 camera.position.set(
-                    (image.x + image.width * 0.5f).coerceIn(viewW, maxW - viewW),
-                    (image.y + image.height * 0.5f).coerceIn(viewH, maxH - viewH),
+                    (setX).coerceIn(viewW, maxW - viewW),
+                    (setY).coerceIn(viewH, maxH - viewH),
                     camera.position.z
                 )
             }

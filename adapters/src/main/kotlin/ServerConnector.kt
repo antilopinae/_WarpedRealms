@@ -28,7 +28,7 @@ class ServerConnector() {
 
 
     fun sendRequest(p: RequestMessage) {
-        p.token =token
+        p.token = token
         GRpcLayer.sendRequest(p)
     }
 

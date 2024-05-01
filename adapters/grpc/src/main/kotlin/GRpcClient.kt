@@ -49,7 +49,11 @@ class GRpcClient {
     }
     fun getMessage(): HelloResponse? {
         if(response_messages.size!=0)
-            return response_messages.poll()
+        {
+            val el = response_messages.poll()
+            response_messages.clear()
+            return el
+        }
         else return null
     }
     fun mapRequest(packClient: RequestMessage): HelloRequest{
@@ -94,28 +98,3 @@ class GRpcClient {
 //        channel.shutdownNow()
 //    }
 }
-
-//
-//// Пример кастомного провайдера балансировщика
-//class NewLoadBalancerProvider : LoadBalancerProvider() {
-//    override fun isAvailable() = true
-//    override fun getPriority(): Int {
-//        TODO("Not yet implemented")
-//    }
-//
-//    override fun getPolicyName(): String {
-//        TODO("Not yet implemented")
-//    }
-//
-//    override fun newLoadBalancer(helper: LoadBalancer.Helper) = YourLoadBalancer(helper)
-//}
-//class YourLoadBalancer(helper: LoadBalancer.Helper) : LoadBalancer() {
-//    // Реализация вашего балансировщика
-//    override fun handleNameResolutionError(p0: Status?) {
-//        TODO("Not yet implemented")
-//    }
-//
-//    override fun shutdown() {
-//        TODO("Not yet implemented")
-//    }
-//}
