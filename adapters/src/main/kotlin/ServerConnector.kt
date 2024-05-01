@@ -5,13 +5,17 @@ import adapters.grpc.client.GRpcClient
 import adapters.grpc.client.dao.RequestMessage
 import adapters.grpc.client.dao.ResponseMessage
 import adapters.rest.dao.token.TokenResponse
+import adapters.rest_api.KtorLayer
 import io.ktor.client.plugins.*
 
 //Подключение к серверу, передача событий.
 class ServerConnector() {
     val GRpcLayer = GRpcLayer()
+    val KtorLayer = KtorLayer()
+
     init {
         println("==========Server To Connect==========")
+        KtorLayer.start()
     }
     val token: String = "ajajajajajjajajajajajajaj"
 
@@ -20,6 +24,8 @@ class ServerConnector() {
 //            this.token = (authorizationWindow.token as TokenResponse).token
 //        }
 //    }
+
+
 
     fun sendRequest(p: RequestMessage) {
         p.token =token

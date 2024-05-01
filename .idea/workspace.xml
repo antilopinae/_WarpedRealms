@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99cf4c05-3e10-463d-8249-7f6c26c63cbd" name="Changes" comment="All works">
+      <change afterPath="$PROJECT_DIR$/assets/ui/font-list.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/ui/font-subtitle.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/ui/font-window.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/ui/font.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/ui/uiskin.atlas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/ui/uiskin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/ui/uiskin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/actor/FlipImage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/component/DeadComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/component/LifeComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/factory/DeadFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/factory/LifeFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/LifeSystem.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/grpc/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/ServerConnector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/src/main/kotlin/ServerConnector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/rest_api/KtorLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/src/main/kotlin/rest_api/KtorLayer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/WarpedRealms.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/WarpedRealms.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/component/ImageComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/component/ImageComponent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/factory/ImageFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/factory/ImageFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/AuthorizationScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/AuthorizationScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/SpawnSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/SpawnSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/PhysicSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/PhysicSystem.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,11 +145,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/antilopa/Projects/IProject/!WarpedRealms/WarpedRealms/assets/map"
+    "last_opened_file_path": "/home/antilopa/Projects/IProject/!WarpedRealms/WarpedRealms/assets"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/assets/map" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -144,7 +164,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WarpedRealms [jar]">
+  <component name="RunManager" selected="Kotlin.Lwjgl3Launcher">
     <configuration name="WarpedRealms [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -242,8 +262,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WarpedRealms [jar]" />
         <item itemvalue="Kotlin.Lwjgl3Launcher" />
+        <item itemvalue="Gradle.WarpedRealms [jar]" />
         <item itemvalue="Gradle.WarpedRealms:adapters [jar]" />
         <item itemvalue="Gradle.WarpedRealms:adapters:grpc [generateTestProto]" />
         <item itemvalue="Gradle.WarpedRealms:adapters [build]" />
@@ -315,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714561798338</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="All works">
+      <option name="closed" value="true" />
+      <created>1714571133320</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714571133321</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

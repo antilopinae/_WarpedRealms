@@ -63,6 +63,21 @@ class PhysicSystem : ContactListener {
             physicCmp.prevPos.set(physicCmp.body!!.position)
 
             if (!physicCmp.impulse.isZero) {
+                if(physicCmp.impulse.x > 0)
+                {
+                    imageCmp.image.run {
+                        flipX = false
+                    }
+                }
+                if(physicCmp.impulse.x < 0)
+                {
+                    imageCmp.image.run {
+                        flipX = true
+                    }
+                }
+            }
+
+            if (!physicCmp.impulse.isZero) {
                 physicCmp.body!!.applyLinearImpulse(physicCmp.impulse, physicCmp.body!!.worldCenter, true)
                 physicCmp.impulse.setZero()
             }

@@ -11,6 +11,9 @@ class KtorLayer {
 
     val client = KtorClient(baseUrl)
 
+    fun start(){
+
+    }
     fun getToken(signType: SignType, label: Label): Response {
         return client.httpConnect(signType, label)
     }

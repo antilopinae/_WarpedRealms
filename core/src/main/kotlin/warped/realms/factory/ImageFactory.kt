@@ -1,13 +1,13 @@
 package warped.realms.factory
 
 import Factory
-import com.badlogic.gdx.scenes.scene2d.ui.Image
+import warped.realms.actor.FlipImage
 import warped.realms.component.ImageComponent
 
 @Factory(ImageComponent::class)
 class ImageFactory {
     fun Factory(lambda: ImageComponent.() -> ImageComponent): ImageComponent {
-        return ImageComponent(Image()).lambda()
+        return ImageComponent(FlipImage()).lambda()
     }
 
     fun Delete(cmp: ImageComponent) {

@@ -15,14 +15,16 @@ import com.badlogic.gdx.scenes.scene2d.Stage
 import com.badlogic.gdx.scenes.scene2d.ui.*
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener
 import com.badlogic.gdx.utils.Align.center
+import com.badlogic.gdx.utils.viewport.ExtendViewport
 import com.badlogic.gdx.utils.viewport.FitViewport
 import ktx.actors.onClick
 import warped.realms.WarpedRealms
 
 class AuthorizationScreen(game: WarpedRealms): AScreen(game) {
-    lateinit var client: KtorClient
+    private val stage: Stage = Stage(
+        FitViewport(640f, 480f)
+    )
 
-    private lateinit var stage: Stage
     private lateinit var skin: Skin
     private lateinit var sendButton: TextButton
     private lateinit var signInButton: TextButton
@@ -55,7 +57,6 @@ class AuthorizationScreen(game: WarpedRealms): AScreen(game) {
     override fun show() {
         super.show()
 
-        stage = Stage(FitViewport(640f, 480f))
         skin = Skin(Gdx.files.internal("ui/uiskin.json"))
 
         sendButton = TextButton("Send", skin, "default").apply {
@@ -148,7 +149,9 @@ class AuthorizationScreen(game: WarpedRealms): AScreen(game) {
                         closeButton.isDisabled = true
                         sendButton.isDisabled = true
                         backButton.isDisabled = true
-                        Gdx.app.exit()
+
+                        //START GAME
+                        game.startGameScreen()
                     }
                     return@addListener true
                 }
@@ -192,5 +195,8 @@ class AuthorizationScreen(game: WarpedRealms): AScreen(game) {
     override fun dispose() {
         stage.dispose()
         skin.dispose()
+    }
+    companion object{
+        lateinit var client: KtorClient
     }
 }

@@ -20,6 +20,7 @@ import com.badlogic.gdx.utils.Scaling
 import generated.systems.injectSys
 import ktx.box2d.BodyDefinition
 import ktx.box2d.body
+import warped.realms.actor.FlipImage
 import warped.realms.entity.GameEntity
 import warped.realms.entity.mapper.EntityMapper
 import warped.realms.event.*
@@ -150,7 +151,7 @@ class SpawnSystem : IHandleEvent {
             128
         )
         val imgCmp = fun ImageComponent.() = this.apply {
-            this.image = Image(texture).apply {
+            this.image = FlipImage(texture).apply {
                 setPosition(cordX, cordY)
                 setSize(width, height)
                 setScaling(Scaling.fill)
