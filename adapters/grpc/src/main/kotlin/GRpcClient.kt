@@ -23,6 +23,7 @@ class GRpcClient {
         LoadBalancerRegistry.getDefaultRegistry().register(PickFirstLoadBalancerProvider())
         println("GRpc client started")
     }
+    var url = "0.tcp.ngrok.io:17823"
     val channel: ManagedChannel =
         //localhost:8000
         ManagedChannelBuilder.forTarget("localhost:8000")

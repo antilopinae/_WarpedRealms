@@ -24,7 +24,8 @@ class WarpedRealms : KtxGame<KtxScreen>() {
 
         ScreenManager.getInstance().init(this)
 
-        startGameScreen()
+        startAuthorizationScreen()
+//        startGameScreen()
     }
     fun startAuthorizationScreen(){
         try{
@@ -36,6 +37,7 @@ class WarpedRealms : KtxGame<KtxScreen>() {
         ScreenManager.getInstance().show(EnumScreen.AUTHORIZATION_SCREEN)
     }
     fun startGameScreen(){
+        serverConnector.initGrpc()
         try{
             ScreenManager.getInstance().hide(EnumScreen.AUTHORIZATION_SCREEN)
         } catch (e: Exception)

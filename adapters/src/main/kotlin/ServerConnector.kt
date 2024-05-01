@@ -10,9 +10,12 @@ import io.ktor.client.plugins.*
 
 //Подключение к серверу, передача событий.
 class ServerConnector() {
-    val GRpcLayer = GRpcLayer()
+    lateinit var GRpcLayer: GRpcLayer
     val KtorLayer = KtorLayer()
 
+    fun initGrpc(){
+        GRpcLayer = GRpcLayer()
+    }
     init {
         println("==========Server To Connect==========")
         KtorLayer.start()

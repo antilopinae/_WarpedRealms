@@ -68,7 +68,8 @@ class AuthorizationScreen(game: WarpedRealms): AScreen(game) {
                     closeButton.isDisabled = true
                     sendButton.isDisabled = true
                     backButton.isDisabled = true
-                    Gdx.app.exit()
+//                    Gdx.app.exit()
+                    game.startGameScreen()
                 }
             }
         }
@@ -80,6 +81,7 @@ class AuthorizationScreen(game: WarpedRealms): AScreen(game) {
             onClick {
                 Gdx.app.exit()
                 //exitProcess(0)
+
             }
         }
 
@@ -193,7 +195,7 @@ class AuthorizationScreen(game: WarpedRealms): AScreen(game) {
     }
 
     override fun dispose() {
-        stage.dispose()
+//        stage.dispose()
         skin.dispose()
     }
     companion object{
