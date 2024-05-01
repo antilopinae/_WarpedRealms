@@ -16,7 +16,7 @@ import warped.realms.component.ImageComponent
 import warped.realms.event.Event
 import warped.realms.event.IHandleEvent
 import warped.realms.event.MapChangeEvent
-import warped.realms.screen.Screen.Companion.UNIT_SCALE
+import warped.realms.screen.GameScreen.Companion.UNIT_SCALE
 import System
 import Update
 import com.badlogic.gdx.graphics.g2d.TextureAtlas

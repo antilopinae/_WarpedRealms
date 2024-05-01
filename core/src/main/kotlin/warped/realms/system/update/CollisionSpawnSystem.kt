@@ -26,7 +26,7 @@ import warped.realms.event.CollisionDespawnEvent
 import warped.realms.event.Event
 import warped.realms.event.IHandleEvent
 import warped.realms.event.MapChangeEvent
-import warped.realms.screen.Screen.Companion.UNIT_SCALE
+import warped.realms.screen.GameScreen.Companion.UNIT_SCALE
 import warped.realms.system.Logger
 import warped.realms.system.debug
 import kotlin.math.max

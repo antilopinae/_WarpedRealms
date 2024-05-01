@@ -8,6 +8,8 @@ import com.google.protobuf.kotlin.toByteString
 import com.grpc.*
 import io.grpc.ManagedChannel
 import io.grpc.ManagedChannelBuilder
+import io.grpc.NameResolverRegistry
+import io.grpc.internal.DnsNameResolverProvider
 import io.grpc.stub.StreamObserver
 import io.ktor.util.*
 import java.util.concurrent.ConcurrentLinkedQueue
@@ -16,8 +18,13 @@ import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.locks.ReentrantLock
 
 class GRpcClient {
+    init{
+        NameResolverRegistry.getDefaultRegistry().register(DnsNameResolverProvider())
+        println("GRpc client started")
+    }
     val channel: ManagedChannel =
-        ManagedChannelBuilder.forTarget("localhost:8000")
+        //localhost:8000
+        ManagedChannelBuilder.forTarget("0.tcp.ngrok.io:11711")
             .executor(Executors.newCachedThreadPool())
             .usePlaintext()
             .build()
@@ -34,10 +41,6 @@ class GRpcClient {
 
     val lock: ReentrantLock = ReentrantLock()
 
-
-    init{
-        println("GRpc client started")
-    }
     fun sendMessage(){
         val request = request_messages.poll()
         toServer.onNext(request)

@@ -14,7 +14,7 @@ import warped.realms.system.debug
 import warped.realms.system.update.mapper.ServerDismapperSystem
 import warped.realms.system.update.mapper.ServerMapperSystem
 
-class Screen(game: WarpedRealms): AScreen(game) {
+class GameScreen(game: WarpedRealms): AScreen(game) {
     private val titledMap = TmxMapLoader().load("map/map_1.tmx")
     private val systems = Systems
     private val serverConnector = game.serverConnector.also {

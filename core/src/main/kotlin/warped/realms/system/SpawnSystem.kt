@@ -11,7 +11,7 @@ import ktx.tiled.x
 import ktx.tiled.y
 import warped.realms.component.*
 import warped.realms.entity.Entity
-import warped.realms.screen.Screen.Companion.UNIT_SCALE
+import warped.realms.screen.GameScreen.Companion.UNIT_SCALE
 import System
 import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType

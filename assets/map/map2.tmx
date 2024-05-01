@@ -17,7 +17,7 @@
   <image source="../../../../Free Pixel Art Forest/PNG/Background layers/Layer_0011_0.png" width="928" height="793"/>
  </imagelayer>
  <imagelayer id="10" name="bg 5" locked="1" offsetx="-1.33333" offsety="-449.333">
-  <image source="../../../../Free Pixel Art Forest/PNG/Background layers/Layer_0010_1.png" width="928" height="793"/>
+  <image source="Layer_0010_1.png"/>
  </imagelayer>
  <imagelayer id="9" name="bg 4" locked="1" offsetx="0" offsety="-440.667">
   <image source="../../../../Free Pixel Art Forest/PNG/Background layers/Layer_0009_2.png" width="928" height="793"/>

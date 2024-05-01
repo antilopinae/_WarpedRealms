@@ -18,8 +18,8 @@ fun main() {
         //setFullscreenMode(Lwjgl3ApplicationConfiguration.getDisplayMode())
         //setResizable(false)
         useVsync(true)
-        setIdleFPS(10)
-        setForegroundFPS(10)
+        setIdleFPS(60)
+        setForegroundFPS(60)
         setWindowIcon(*(arrayOf(128, 64, 32, 16).map { "libgdx$it.png" }.toTypedArray()))
     })
 }

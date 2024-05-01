@@ -14,6 +14,7 @@ dependencies {
   api "com.badlogicgames.gdx-controllers:gdx-controllers-core:$gdxControllersVersion"
   api "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
   api "com.badlogicgames.gdx:gdx:$gdxVersion"
+
   api "io.github.libktx:ktx-actors:$ktxVersion"
   api "io.github.libktx:ktx-app:$ktxVersion"
   api "io.github.libktx:ktx-assets:$ktxVersion"
@@ -31,6 +32,7 @@ dependencies {
   implementation project(":processor")
   implementation project(":adapters")
   implementation project(":adapters:grpc")
+  implementation project(":adapters:rest")
 
   ksp project(":processor")
   kspTest(project(':processor'))
