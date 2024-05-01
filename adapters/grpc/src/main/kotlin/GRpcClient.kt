@@ -6,9 +6,8 @@ import adapters.grpc.client.dao.ResponseMessage
 import com.google.protobuf.ByteString
 import com.google.protobuf.kotlin.toByteString
 import com.grpc.*
-import io.grpc.ManagedChannel
-import io.grpc.ManagedChannelBuilder
-import io.grpc.NameResolverRegistry
+import io.grpc.*
+import io.grpc.internal.DnsNameResolver
 import io.grpc.internal.DnsNameResolverProvider
 import io.grpc.stub.StreamObserver
 import io.ktor.util.*
@@ -16,16 +15,19 @@ import java.util.concurrent.ConcurrentLinkedQueue
 import java.util.concurrent.Executors
 import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.locks.ReentrantLock
+import io.grpc.internal.PickFirstLoadBalancerProvider
 
 class GRpcClient {
     init{
         NameResolverRegistry.getDefaultRegistry().register(DnsNameResolverProvider())
+        LoadBalancerRegistry.getDefaultRegistry().register(PickFirstLoadBalancerProvider())
         println("GRpc client started")
     }
     val channel: ManagedChannel =
         //localhost:8000
         ManagedChannelBuilder.forTarget("localhost:8000")
             .executor(Executors.newCachedThreadPool())
+            .defaultLoadBalancingPolicy("pick_first")
             .usePlaintext()
             .build()
     val stub: GreetingServiceGrpc.GreetingServiceStub =
@@ -92,3 +94,28 @@ class GRpcClient {
 //        channel.shutdownNow()
 //    }
 }
+
+//
+//// Пример кастомного провайдера балансировщика
+//class NewLoadBalancerProvider : LoadBalancerProvider() {
+//    override fun isAvailable() = true
+//    override fun getPriority(): Int {
+//        TODO("Not yet implemented")
+//    }
+//
+//    override fun getPolicyName(): String {
+//        TODO("Not yet implemented")
+//    }
+//
+//    override fun newLoadBalancer(helper: LoadBalancer.Helper) = YourLoadBalancer(helper)
+//}
+//class YourLoadBalancer(helper: LoadBalancer.Helper) : LoadBalancer() {
+//    // Реализация вашего балансировщика
+//    override fun handleNameResolutionError(p0: Status?) {
+//        TODO("Not yet implemented")
+//    }
+//
+//    override fun shutdown() {
+//        TODO("Not yet implemented")
+//    }
+//}

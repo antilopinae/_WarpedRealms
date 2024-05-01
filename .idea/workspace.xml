@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99cf4c05-3e10-463d-8249-7f6c26c63cbd" name="Changes" comment="All works">
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/industrial.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/map/map_3.tmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapters/grpc/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/map/industrial.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/map/industrial.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/map/map2.tmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/map/map_1.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/map/map_1.tmx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/GameScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/GameScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/SpawnSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/SpawnSystem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/DebugSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/DebugSystem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/RenderSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/RenderSystem.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +119,7 @@
     "Gradle.WarpedRealms:adapters [build].executor": "Run",
     "Gradle.WarpedRealms:adapters [jar].executor": "Run",
     "Gradle.WarpedRealms:adapters:grpc [generateProto].executor": "Run",
+    "Gradle.WarpedRealms:adapters:grpc [generateTestProto].executor": "Run",
     "Kotlin script (Beta).build.gradle.kts.executor": "Run",
     "Kotlin.Lwjgl3Launcher.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -152,28 +145,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.WarpedRealms [jar]">
-    <configuration name="WarpedRealms [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="WarpedRealms [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -240,6 +211,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="WarpedRealms:adapters:grpc [generateTestProto]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/adapters/grpc" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generateTestProto" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Lwjgl3Launcher" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="warped.realms.lwjgl3.Lwjgl3Launcher" />
       <module name="WarpedRealms.lwjgl3.main" />
@@ -251,9 +244,9 @@
       <list>
         <item itemvalue="Gradle.WarpedRealms [jar]" />
         <item itemvalue="Kotlin.Lwjgl3Launcher" />
-        <item itemvalue="Gradle.WarpedRealms [dependencies]" />
-        <item itemvalue="Gradle.WarpedRealms:adapters [build]" />
         <item itemvalue="Gradle.WarpedRealms:adapters [jar]" />
+        <item itemvalue="Gradle.WarpedRealms:adapters:grpc [generateTestProto]" />
+        <item itemvalue="Gradle.WarpedRealms:adapters [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -314,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714556835782</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="All works">
+      <option name="closed" value="true" />
+      <created>1714561798338</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714561798338</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
