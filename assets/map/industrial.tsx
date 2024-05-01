@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.10" tiledversion="1.10.2" name="industrial" tilewidth="18" tileheight="18" tilecount="112" columns="16">
- <image source="../IDE/WarpedRealmsLL-master/assets/graphics/background/industrial.png" width="288" height="126"/>
+ <grid orientation="orthogonal" width="36" height="36"/>
+ <image source="../graphics/background/industrial.png" width="288" height="126"/>
  <tile id="0">
   <objectgroup draworder="index" id="2">
    <object id="1" x="0.181818" y="0" width="17.7273" height="17.8182"/>

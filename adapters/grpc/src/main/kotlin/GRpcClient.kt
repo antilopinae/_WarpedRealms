@@ -24,7 +24,7 @@ class GRpcClient {
     }
     val channel: ManagedChannel =
         //localhost:8000
-        ManagedChannelBuilder.forTarget("0.tcp.ngrok.io:11711")
+        ManagedChannelBuilder.forTarget("localhost:8000")
             .executor(Executors.newCachedThreadPool())
             .usePlaintext()
             .build()

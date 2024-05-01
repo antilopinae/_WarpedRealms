@@ -20,6 +20,7 @@ import warped.realms.screen.GameScreen.Companion.UNIT_SCALE
 import System
 import Update
 import com.badlogic.gdx.graphics.g2d.TextureAtlas
+import com.badlogic.gdx.maps.tiled.TiledMapImageLayer
 import com.badlogic.gdx.utils.viewport.ExtendViewport
 import ktx.assets.toInternalFile
 import warped.realms.system.Logger
@@ -34,6 +35,8 @@ class RenderSystem : IHandleEvent {
 
     private val bgdLayers = mutableListOf<TiledMapTileLayer>()
     private val fgdLayers = mutableListOf<TiledMapTileLayer>()
+    private val imgLayers = mutableListOf<TiledMapImageLayer>()
+
     private val mapRenderer = OrthogonalTiledMapRenderer(null, UNIT_SCALE, stage.batch)
     private val orthoCam = stage.camera as OrthographicCamera
 
@@ -44,6 +47,7 @@ class RenderSystem : IHandleEvent {
             AnimatedTiledMapTile.updateAnimationBaseTime()
             mapRenderer.setView(orthoCam)
             //mapRenderer.render()
+            renderImageLayer(imgLayers)
             renderTileLayer(bgdLayers)
             act(deltaTime)
             draw()
@@ -79,13 +83,22 @@ class RenderSystem : IHandleEvent {
                 bgdLayers.clear()
                 fgdLayers.clear()
                 event.mapLoader.layers.forEach { layer ->
-                    if(layer !is (TiledMapTileLayer)) return false
+                    if(layer !is (TiledMapTileLayer)) {
+                        println("Layer not is tiledMapLayer")
+                        if(layer is TiledMapImageLayer)
+                        {
+                            imgLayers.add(layer)
+                        }
+                        return@forEach
+                    }
                     if(layer.name.startsWith("fgd_")){
                         Logger.debug { "Add fgdLayer." }
 
                         fgdLayers.add(layer)
                     }
                     else if(layer.name.startsWith("bgd_")){
+                        Logger.debug { "Add bgdLayer." }
+
                         bgdLayers.add(layer)
                     }
                     else {
@@ -102,6 +115,15 @@ class RenderSystem : IHandleEvent {
             stage.batch.use(orthoCam.combined){
                 list.forEach {
                     mapRenderer.renderTileLayer(it)
+                }
+            }
+        }
+    }
+    fun Stage.renderImageLayer(list: MutableList<TiledMapImageLayer>){
+        if(list.isNotEmpty()){
+            stage.batch.use(orthoCam.combined){
+                list.forEach {
+                    mapRenderer.renderImageLayer(it)
                 }
             }
         }

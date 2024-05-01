@@ -60,8 +60,8 @@ class SpawnSystem : IHandleEvent {
             posY,
             size(AnimationModel.FANTAZY_WARRIOR),
             8f,
-            physicScaling = vec2(0.3f, 0.3f),
-            physicOffset = vec2(0f, -10f * UNIT_SCALE)
+            physicScaling = vec2(0.1f, 0.1f),
+            physicOffset = vec2(0f, -12f * UNIT_SCALE)
         ).apply {
             input(this)
         }.also {

@@ -8,7 +8,7 @@ import System
 import Update
 
 @System
-@Update(-1)
+//@Update(-1)
 class DebugSystem {
     private val phWorld: World = PhysicSystem.phWorld
     private val stage: Stage = RenderSystem.stage

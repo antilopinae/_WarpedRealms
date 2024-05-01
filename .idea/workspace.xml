@@ -5,93 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99cf4c05-3e10-463d-8249-7f6c26c63cbd" name="Changes" comment="All works">
-      <change afterPath="$PROJECT_DIR$/adapters/rest/src/main/kotlin/KtorClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapters/rest/src/main/kotlin/dao/Response.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapters/rest/src/main/kotlin/dao/SignType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapters/rest/src/main/kotlin/dao/exception/AbstractApiException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapters/rest/src/main/kotlin/dao/exception/AlreadyExistException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapters/rest/src/main/kotlin/dao/exception/ClientError.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapters/rest/src/main/kotlin/dao/exception/InternalServerException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapters/rest/src/main/kotlin/dao/exception/NotFoundException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapters/rest/src/main/kotlin/dao/exception/UnauthorizedException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapters/rest/src/main/kotlin/dao/token/TokenResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0000_9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0001_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0002_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0003_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0004_Lights.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0005_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0006_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0007_Lights.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0008_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0009_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0010_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/graphics/background/Layer_0011_0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/AuthorizationScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/EnumScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/ScreenManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/graphics/background/industrial.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map/map_3.tmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/counters.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/cacheable/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/local-state/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/rest/build/kotlin/compileKotlin/local-state/build-history.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/ServerConnector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/src/main/kotlin/ServerConnector.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/rest_api/KtorLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/src/main/kotlin/rest_api/KtorLayer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/map/industrial.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/map/industrial.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/map/map2.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/map/map2.tmx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/WarpedRealms.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/WarpedRealms.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/Screen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/GameScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/map/map2.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/map/map_1.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/map/map_1.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/GameScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/GameScreen.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/SpawnSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/SpawnSystem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/CollisionSpawnSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/CollisionSpawnSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/DebugSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/DebugSystem.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/RenderSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/RenderSystem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/kotlin/warped/realms/lwjgl3/Lwjgl3Launcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/src/main/kotlin/warped/realms/lwjgl3/Lwjgl3Launcher.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -382,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714499886593</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="All works">
+      <option name="closed" value="true" />
+      <created>1714556835782</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714556835782</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
