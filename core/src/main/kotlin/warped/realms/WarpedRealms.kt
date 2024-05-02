@@ -21,7 +21,6 @@ class WarpedRealms : KtxGame<KtxScreen>() {
 
     override fun create() {
         Gdx.app.logLevel = Application.LOG_DEBUG
-
         ScreenManager.getInstance().init(this)
 
         startAuthorizationScreen()

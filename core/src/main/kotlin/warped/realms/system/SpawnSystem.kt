@@ -33,6 +33,8 @@ import warped.realms.system.update.mapper.ServerMapperSystem
 
 const val entityLayer = "entities"
 
+//TODO(): have to add spawnCfgs, 49:50
+
 @System
 class SpawnSystem : IHandleEvent {
     private val textureAtlas: TextureAtlas = RenderSystem.textureAtlas
@@ -181,6 +183,7 @@ class SpawnSystem : IHandleEvent {
                 //hit box
                 box(w, h, physicOffset) {
                     isSensor = bodyType != BodyType.StaticBody
+                    userData = HIT_BOX_SENSOR
                 }
                 if (bodyType != BodyType.StaticBody) {
                     //collision box
@@ -192,7 +195,11 @@ class SpawnSystem : IHandleEvent {
                 }
             }
             this.a()
-                .also { this.body!!.userData = this }
+                .also {
+                    this.body!!.userData = this
+                    this.offset.set(physicOffset)
+                    this.size.set(width,height)
+                }
         }
         val mvCmp = fun MoveComponent.() = this.apply {
             this.speed = speed
@@ -232,6 +239,10 @@ class SpawnSystem : IHandleEvent {
     }
     fun Dispose() {
         println("[DISPOSE] ${this::class.simpleName}")
+    }
+
+    companion object {
+        const val HIT_BOX_SENSOR = "HITBOX"
     }
 }
 enum class entityType {

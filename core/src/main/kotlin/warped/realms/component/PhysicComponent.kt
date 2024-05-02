@@ -16,4 +16,6 @@ class PhysicComponent(
 ) {
     val prevPos = vec2()
     val impulse = vec2()
+    val offset = vec2()
+    val size = vec2()
 }

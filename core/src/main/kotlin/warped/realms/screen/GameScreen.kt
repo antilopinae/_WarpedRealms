@@ -50,7 +50,6 @@ class GameScreen(game: WarpedRealms): AScreen(game) {
 //                if (accumulator < stepRate) {
 //                    return
 //                }
-//
 //                while (accumulator >= stepRate) {
 //                    onUpdate(deltaTime)
 //                    accumulator -= stepRate
@@ -68,6 +67,6 @@ class GameScreen(game: WarpedRealms): AScreen(game) {
         super.dispose()
     }
     companion object{
-        const val UNIT_SCALE = 1 / 18f
+        const val UNIT_SCALE = 1 / 24f
     }
 }

@@ -4,13 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99cf4c05-3e10-463d-8249-7f6c26c63cbd" name="Changes" comment="Added smooth">
+    <list default="true" id="99cf4c05-3e10-463d-8249-7f6c26c63cbd" name="Changes" comment="Added mysql">
+      <change afterPath="$PROJECT_DIR$/assets/CrystalWorld_v1.1/02. Crystal World/rocks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/PixelFantasy_Caves_1.0/background1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/PixelFantasy_Caves_1.0/background2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/PixelFantasy_Caves_1.0/background3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map/cave_tileset.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map/decors.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map/rocks.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map/tileset.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/fence_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/fence_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/grass_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/grass_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/grass_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/lamp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/rock_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/rock_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/rock_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/shop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/shop_anim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/decorations/sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/oak_woods_v1.0/oak_woods_tileset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/stringstar fields/tileset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/component/AttackComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/entity/SpawnCfg.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/factory/AttackFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/AttackSystem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/DeadSystem.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/grpc/src/main/kotlin/GRpcClient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapters/src/main/kotlin/ServerConnector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/src/main/kotlin/ServerConnector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/map/map_1.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/map/map_1.tmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/WarpedRealms.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/WarpedRealms.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/AuthorizationScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/AuthorizationScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/kotlin/warped/realms/lwjgl3/Lwjgl3Launcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/src/main/kotlin/warped/realms/lwjgl3/Lwjgl3Launcher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/component/PhysicComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/component/PhysicComponent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/input/PlayerKeyboardInputProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/input/PlayerKeyboardInputProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/GameScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/screen/GameScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/SpawnSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/SpawnSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/DebugSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/DebugSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/LifeSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/LifeSystem.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +129,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/core/src/main/kotlin/warped/realms/component/AttackComponent.kt" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/core/src/main/kotlin/warped/realms/entity/Entity.kt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/core/src/main/kotlin/warped/realms/system/update/AttackSystem.kt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/processor/src/main/kotlin/SampleAnnotationProvider.kt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -129,7 +169,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/antilopa/Projects/IProject/!WarpedRealms/WarpedRealms/assets&quot;
+    &quot;last_opened_file_path&quot;: &quot;/home/antilopa/Projects/IProject/!WarpedRealms/WarpedRealms/assets&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -248,8 +289,8 @@
       <list>
         <item itemvalue="Kotlin.Lwjgl3Launcher" />
         <item itemvalue="Gradle.WarpedRealms [jar]" />
-        <item itemvalue="Gradle.WarpedRealms:adapters [jar]" />
         <item itemvalue="Gradle.WarpedRealms:adapters [build]" />
+        <item itemvalue="Gradle.WarpedRealms:adapters [jar]" />
         <item itemvalue="Gradle.WarpedRealms:adapters:grpc [generateTestProto]" />
       </list>
     </recent_temporary>
@@ -343,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714591071694</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added mysql">
+      <option name="closed" value="true" />
+      <created>1714603255222</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714603255222</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -354,6 +403,7 @@
     <MESSAGE value="All works" />
     <MESSAGE value="Added ktor" />
     <MESSAGE value="Added smooth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added smooth" />
+    <MESSAGE value="Added mysql" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mysql" />
   </component>
 </project>

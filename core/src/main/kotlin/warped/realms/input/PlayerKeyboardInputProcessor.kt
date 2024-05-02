@@ -15,6 +15,7 @@ class PlayerKeyboardInputProcessor : KtxInputAdapter {
 
     private var playerCos: Float = 0f
     private var playerSin: Float = 0f
+    private var doAttack = false
     fun addMoveCmp(moveComponent: MoveComponent) {
         moveCmps.add(moveComponent)
     }
@@ -36,6 +37,11 @@ class PlayerKeyboardInputProcessor : KtxInputAdapter {
             updatePlayerMovement()
             return true
         }
+//        else if(keycode == SPACE){
+//            doAttack = true
+//            updatePlayerMovement()
+//            return true
+//        }
         return false
     }
     override fun keyUp(keycode: Int): Boolean {
